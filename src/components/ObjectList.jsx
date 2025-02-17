@@ -17,11 +17,13 @@ const arrayDataItems = songsList.map(song =>
 
 export default function ObjectList() {
   return (
-    <div className='flex items-center flex-col'>
-      <h2 className='self-start'>Songs:</h2>
-      <ul className='overflow-scroll max-h-72 px-4 my-4'>
-        {arrayDataItems}
-      </ul>
-    </div>
+    <>
+      <p className='mb-2'>Songs:</p>
+      <div className='flex items-center flex-col'>
+        <ul className='overflow-scroll scrollbar-hide h-3/5 px-4 absolute'>
+          {arrayDataItems}
+        </ul>
+      </div>
+    </>
   );
 }

@@ -3,7 +3,7 @@ import ObjectList from './ObjectList'
 
 export default function Home() {
   return (
-    <main className='flex flex-col content-center items-center h-screen'>
+    <main className='flex flex-col content-center items-center h-screen relative'>
       <Header />
       <ObjectList />
     </main>
