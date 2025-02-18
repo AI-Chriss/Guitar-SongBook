@@ -19,8 +19,8 @@ export default function ObjectDetail() {
         clearInterval(intervalId);
         return;
       }
-      container.scrollTop += 3; // Możesz zmienić wartość, aby dostosować prędkość
-    }, 160);
+      container.scrollTop += 2; // Możesz zmienić wartość, aby dostosować prędkość
+    }, 200);
 
     // Funkcja przerywająca scrollowanie przy manualnym przewijaniu
     const stopScrolling = () => {
