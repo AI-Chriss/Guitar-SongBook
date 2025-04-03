@@ -1,7 +1,8 @@
 import { Link } from 'react-router-dom';
-import songsList from '../data/songs-list';
+import songsData from '../data/songs-data.js';
 
-const arrayDataItems = songsList.map(song => 
+// define a function to render the list of songs from songsData
+const songs = songsData.map(song => 
   <li key={song.id} className='my-4'>
     <Link to={`/songs/${song.id}`} className='flex gap-x-4'>
       <img src={song.img} alt='' className='w-12 h-12 rounded-full' />
@@ -21,7 +22,7 @@ export default function ObjectList() {
       <p className='mb-2'>Songs:</p>
       <div className='flex items-center flex-col'>
         <ul className='overflow-scroll scrollbar-hide h-3/5 px-4 absolute'>
-          {arrayDataItems}
+          {songs}
         </ul>
       </div>
     </>

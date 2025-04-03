@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import ReactMarkdown from 'react-markdown';
-import songsList from '../data/songs-list';
+import songsList from '../data/songs-data';
 
 export default function ObjectDetail() {
   const { id } = useParams();
@@ -35,7 +35,7 @@ export default function ObjectDetail() {
   };
 
   return (
-    <div className="p-6 h-screen">
+    <div className="p-6 h-screen flex flex-col">
       <h2 className="text-2xl font-bold">{song.name}</h2>
       <p className="text-lg">Artist: {song.artist}</p>
       <p className="text-lg">Rhythm: {song.rhythm}</p>

@@ -1,11 +1,14 @@
 import Header from './Header'
-import ObjectList from './ObjectList'
+import SongsList from './SongsList'
 
 export default function Home() {
+  
   return (
-    <main className='flex flex-col content-center items-center h-screen relative'>
-      <Header />
-      <ObjectList />
+    <main 
+      className='w-screen overflow-hidden flex flex-col h-full items-center justify-center @container'
+    >
+        <Header />
+        <SongsList />
     </main>
   )
 } 
